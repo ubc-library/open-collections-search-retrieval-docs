@@ -1,2 +1,2 @@
-# open-collections-search-retrieval-docs
+# UBC Open Collections Search and Retrieval Documentation
 Documentation for Open Collections Search and Retrieval features.
