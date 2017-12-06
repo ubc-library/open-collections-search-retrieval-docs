@@ -1,0 +1,495 @@
+{
+    "filtered": {
+        "query": {
+            "bool": {
+                "should": [
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "collection.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "creator": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "date": {
+                                "query": "REPLACE_ME",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "genre": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "geographicLocation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "language": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "subject": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 1.5
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "type": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "category": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "peerReviewStatus": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "personOrCorporation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "scholarlyLevel": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "series": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "campus": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "program": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "affiliation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "degree": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "degree.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "description": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "description.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "contents": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 8
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 8
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "ubc.transcript": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "ubc.transcript": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "ubc.transcript.folded": {
+                                "query": "REPLACE_ME"
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title.folded": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "alternateTitle": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "alternateTitle": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "alternateTitle.folded": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "alternateTitle.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "boost": 7
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "creator": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "creator.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "publisher": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "publisher.folded": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "country": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "country.folded": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "nested": {
+                            "path": "ubc.internal.child.records",
+                            "score_mode": "max",
+                            "query": {
+                                "bool": {
+                                    "should": [
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.title": {
+                                                    "query": "REPLACE_ME",
+                                                    "operator": "or",
+                                                    "boost": 1.5
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.title.folded": {
+                                                    "query": "REPLACE_ME",
+                                                    "operator": "or",
+                                                    "boost": 1.5
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.creator": {
+                                                    "query": "REPLACE_ME",
+                                                    "operator": "or",
+                                                    "boost": 2
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.creator.folded": {
+                                                    "query": "REPLACE_ME",
+                                                    "operator": "or",
+                                                    "boost": 2
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.collection": {
+                                                    "query": "REPLACE_ME",
+                                                    "boost": 2
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.collection.folded": {
+                                                    "query": "REPLACE_ME",
+                                                    "boost": 2
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.description": {
+                                                    "query": "REPLACE_ME"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.description.folded": {
+                                                    "query": "REPLACE_ME"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.ubc.transcript": {
+                                                    "query": "REPLACE_ME",
+                                                    "boost": 3.5
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "match": {
+                                                "ubc.internal.child.records.ubc.transcript.folded": {
+                                                    "query": "REPLACE_ME",
+                                                    "boost": 3.5
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
