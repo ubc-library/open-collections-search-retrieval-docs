@@ -1,0 +1,257 @@
+{
+    "filtered": {
+        "query": {
+            "bool": {
+                "should": [
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "creator": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "date": {
+                                "query": "REPLACE_ME",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "genre": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "geographicLocation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "language": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "subject": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 1.5
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "type": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "category": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "peerReviewStatus": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "personOrCorporation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "scholarlyLevel": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "series": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "campus": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "program": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "affiliation": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "degree": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "description": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "contents": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 8
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "ubc.transcript": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "lenient": true,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "ubc.transcript": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 2
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "title": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 9<-3",
+                                "boost": 6
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "operator": "and",
+                                "boost": 10
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "collection": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2<-30% 7<-3",
+                                "boost": 7
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "creator": {
+                                "query": "REPLACE_ME",
+                                "minimum_should_match": "2",
+                                "boost": 2
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
